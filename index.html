@@ -1,89 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Gabriel Maillo" />
-        <meta property="og:image" content="">
-        <meta property="og:image:alt" content="Themes Bootstrap">
-        <link rel="icon" type="image/png" href="assets/images/beerLogo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Roboto:300,400,600" rel="stylesheet">
-    <title>BeerFlix</title>
-</head>
-
-<body>
-   
-    <nav class="app-navbar fixed-top navbar-expand-lg navbar menu" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="assets/images/beerLogo2.png" class="header-logo"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="icon ion-md-menu"></i>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form id="search" class="filter-input" novalidate>
-
-                    <form id="search-form" class="field has-addons" >
-                        <input class="input search control" type="text" placeholder="Busca tu cerveza">
-                        <input type="month" id="start-date" class="input start-date" value="" min="2000-01" max="2019-12" >
-                        <button type="submit" class="control button is-warning">Búsqueda</button>
-                </form>
-    
-            </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/x-icon" href="/img/icons/favicon.ico">
+    <title>Beerflix</title>
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/allStyles.css" />
+  </head>
+  <body>
+    <header>
+    <nav class="navbar">
+  
+        <a href="/" class="logo">Welcome to Beerflix</a>
     </nav>
-
-    <section id="hero">
-        <div class="container">
-            <div class="heading-content">
-                <h1>Bienvenido a Beerflix</h1>
-            </div>
-            <picture class="beer-images">
-                <source srcset="/assets/images/beer-320.jpg" media="(max-width: 320px)">
-                <source srcset="/assets/images/beer-420.jpg" media="(max-width: 420px)">
-                <source srcset="/assets/images/beer-768.jpg" media="(max-width: 768px)">
-                <source srcset="/assets/images/beer-992.jpg" media="(max-width: 992px)">
-                <img src="assets/images/beer.jpg" alt="BeerFlix">
-            </picture>
-
-            <aside class="social">
-            
-                <section id="quotesSection" class="quotes-section"></section>
-        
-                <section id="likesSection" class="likes-section"></section>
-                
-            </aside>
-        
-
-            <div class="hero-container margintop-lg">
-                <div class="hero-details hidden-mobile">
-            
-                    <p>En Beerflix encontrarás el mejor catálogo de cervezas del mercado.</p>
-                </div>
-                             
-            </div>
-        </div>
-    </section>
-
+      
+      <section class="main-header">
+        <picture>
+          <source
+            srcset="
+              /img/beer320@mobile.jpg    320w,
+              /img/beer768@tablet.jpg    768w,
+              /img/beer1280@desktop.jpg 1280w
+            "
+            media="(min-width: 1024px)"
+          />
+          <source
+            srcset="/img/beer768@tablet.jpg"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/img/beer500@mobile-land.jpg"
+            media="(min-width: 480px) and (orientation: landscape)"
+          />
+          <img src="/img/beer320@mobile.jpg" alt="beers" class="header-img" />
+        </picture>
+      </section>
+      
+    </header>
     
-    <section id="footer">
-        <div class="container">
-            <h6>Disfruta de un consumo responsable.</h6>
-                </div>
-    </section>
-
+    <main class="main">
+      
+      <div id="loader" class="loader-container hide">
+        <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+      </div>
+            
+      <section id="home-main-info-page">
+         <section id="filter-section">
+          <div class="filters-toggle">
+            <span>Find your beer</span>
+            <span>:)</span>
+          </div>
+          <div class="filter-container hide">
+            <div class="filter-item">
+              <label for="name-filter" class="label">Name</label>
+              <input type="text" class="input" id="name-filter">
+            </div>
+            <div class="filter-item">
+              <label for="date-filter" class="label">Beer since</label>
+              <input type="date" class="input" id="date-filter">
+            </div>
+            <div class="filter-item submit-item">
+              <button type="submit" class="input" id="submit-filters-btn">Search</button>
+            </div>
+          </div>
+        </section>
+               
+        <section id="beers-section">
+          <header class="beers-header">
+            <h1>Beer list</h1>
+          </header>
+  
+          <div class="beers-container"></div>
+        </section> 
+      </section>
     
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+      <section id="detail-main-info-page">
+        <section class="detail-beer-section"></section>
+        <section class="detail-comments-section">
+          <div class="detail-beer-info-section">
+            <h2>Comments</h2>
+            <div class="detail-comments-creation-section"></div>
+            <div class="detail-comments-history"></div>            
+          </div>
+        </section>
+      </section>
+      
+    </main>
+    
+    <footer class="main-footer">
+      <aside>
+        <p>...Beerflix recommends enjoying responsible consumption...</p>
+      </aside>
+    </footer>
+    
+    <!-- scripts -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
     <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
-    <script type="module" src="/assets/js/routes.js"></script>
-    <script type="module" src="/assets/js/navbar.js"></script>
-</body>
-
+    <script type="module" src="/js/ui.js"></script>
+    <script type="module" src="/js/filtersForm.js"></script>
+    <script type="module" src="/js/routes.js"></script>
+  </body>
 </html>

@@ -4,9 +4,7 @@
   "description": "Práctica frontend avanzado",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "lint": "./node_modules/.bin/eslint assets/js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -18,12 +16,7 @@
     "url": "https://github.com/GMaillo/Beerflix/issues"
   },
   "homepage": "https://github.com/GMaillo/Beerflix#readme",
-  "devDependencies": {
-    "eslint": "^6.4.0",
-    "eslint-config-airbnb-base": "^14.0.0",
-    "eslint-plugin-import": "^2.18.2",
-    "husky": "^3.0.5"
-  },
+  "devDependencies": {},
   "dependencies": {
     "express": "^4.17.1"
   }

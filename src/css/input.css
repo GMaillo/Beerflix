@@ -1,0 +1,20 @@
+.input {
+    padding: 0.6rem;
+    padding-left: 1rem;
+    border-style: none;
+    border-radius: 0.2rem;
+    font-size: 1.8rem;
+}
+
+.submit-button {
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.label {
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    margin-top: .8rem;
+}

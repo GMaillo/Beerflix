@@ -1,0 +1,21 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 6rem;
+    max-height: 6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(231, 195, 31);
+    width: 100%;
+    z-index: 1;
+}
+
+
+.navbar .logo {
+    font-family: 'Bangers', cursive, sans-serif;
+    font-size: 3rem;
+    color: black;
+}

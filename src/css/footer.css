@@ -1,0 +1,12 @@
+.main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+    font-size: 1rem;
+    font-family: 'Bangers', sans-serif;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    
+}
+

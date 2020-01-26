@@ -1,0 +1,13 @@
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+span.error {
+    color: rgb(43, 42, 34);
+    font-size: 1.1rem;
+    margin-bottom: .5rem;
+}

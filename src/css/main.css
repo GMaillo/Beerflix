@@ -1,0 +1,157 @@
+.main {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#filter-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters-toggle {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgrey;
+    padding: 1.5rem;
+    border-radius: .2rem .2rem 0rem 0rem;
+    cursor: pointer;
+}
+
+.filters-toggle span {
+    color: black;
+    font-size: 1.8rem ;
+    letter-spacing: .15rem;
+
+}
+
+.filter-container {
+    align-self: flex-start;    
+    border-radius: 0rem 0rem .2rem .2rem;
+    width: 100%;
+    background-color: darkgrey;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+}
+
+.submit-item {
+    margin-top: 1.5rem;
+    margin-bottom: 1.2rem;
+}
+
+.submit-item > button {
+    color: black;
+    background-color: darkgrey;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.submit-item > button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+
+#beers-section {
+    margin-top: 2.5rem;
+}
+
+.beers-header {
+    margin-bottom: 2.5rem;
+}
+
+.beers-header > h1 {
+    font-size: 2.2rem;
+    width: 50%;
+    color: black;
+    padding: 0 0 .5rem;
+}
+
+.beers-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.beer-card {
+    margin-bottom: 2rem;
+    background-color:rgba(214, 178, 57, 0.7);
+    border-radius: 15px;
+    
+}
+
+.beer-card a {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.beer-img-container {
+    display: flex;
+    flex-basis: 30%;
+    justify-content: center;
+}
+
+.beer-content-img {
+    height: 10rem;
+    padding: 1rem;
+}
+
+.beer-content-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 60%;
+    width: 100%;
+    padding: 1rem;
+}
+
+.beer-name {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.beer-extra-fields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: .8rem;
+}
+
+.beer-extra-fields div {
+    display: flex;
+    align-items: center;
+}
+
+.beer-extra-field {
+    padding-left: .3rem;
+    font-size: 1.2rem;
+}
+
+.beer-tips {
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+
+@media (min-width: 768px) {
+    .beers-container {
+        flex-flow: row wrap;
+    }
+
+    .beer-card {
+        flex-basis: 45%;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+}
+

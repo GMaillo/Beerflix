@@ -1,0 +1,24 @@
+@import "main.css";
+@import "detail.css";
+@import "loader.css";
+@import "navbar.css";
+@import "main-header.css";
+@import "reset.css";
+@import "input.css";
+@import "utils.css";
+@import "footer.css";
+
+* {
+    font-family: 'Bangers', sans-serif;
+    font-size: 1rem;
+    color: black;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: darkgray;
+}
